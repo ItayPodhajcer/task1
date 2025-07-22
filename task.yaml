@@ -7,8 +7,12 @@ inputs:
   git-token:
     description: 'Optional git token for private or protected repositories.'
     required: false
+  clone-path:
+    description: 'Options local clone path.'
+    requried: false
 runs:
   image: 'my-git'
   args:
     - clone
     - ${{ inputs.repository-url }}
+    - ${{ inputs.clone-path }}
