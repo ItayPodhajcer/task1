@@ -1,0 +1,17 @@
+name: 'Task1'
+description: 'Task1 description'
+inputs:
+  repository-url:
+    description: 'The URL of the repository.'
+    required: true
+  git-token:
+    description: 'Optional git token for private or protected repositories.'
+    required: false
+outputs:
+  results:
+    description: 'The analysis results'
+runs:
+  image: 'my-git'
+  args:
+    - clone
+    - ${{ inputs.repository-url }}
