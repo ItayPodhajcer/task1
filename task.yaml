@@ -7,9 +7,6 @@ inputs:
   git-token:
     description: 'Optional git token for private or protected repositories.'
     required: false
-outputs:
-  results:
-    description: 'The analysis results'
 runs:
   image: 'my-git'
   args:
