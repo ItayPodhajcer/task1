@@ -10,7 +10,7 @@ inputs:
   clone-path:
     description: 'Options local clone path.'
     requried: false
-runs:
+exec:
   image: 'my-git'
   args:
     - clone
