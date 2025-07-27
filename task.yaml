@@ -11,7 +11,7 @@ inputs:
     description: 'Options local clone path.'
     required: false
 exec:
-  image: 'docker.io/library/my-git'
+  image: 'docker.io/library/my-git:latest'
   args:
     - clone
     - ${{ inputs.repository-url }}
