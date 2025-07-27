@@ -9,7 +9,7 @@ inputs:
     required: false
   clone-path:
     description: 'Options local clone path.'
-    required: false
+    required: true
 exec:
   image: 'my-git:latest'
   args:
